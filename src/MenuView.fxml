@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="menu" alignment="TOP_CENTER" style="-fx-background-color: black;">
+         <children>
+            <Label text="Welcome to the Dungeon" textFill="WHITE">
+               <font>
+                  <Font name="It wasn't me" size="50.0" />
+               </font>
+            </Label>
+            <Label text="------------------------------------------------------------------------------" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="It wasn't me" size="50.0" />
+               </font>
+            </Label>
+            <Button fx:id="controlsButton" mnemonicParsing="false" onAction="#handleControlsButton" text="Controls" />
+            <Label text="Easy levels">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.8269230769230769">
+                     <stops>
+                        <Stop color="#f5f232" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="lvl1Button" mnemonicParsing="false" onAction="#handleLvl1Button" prefHeight="20.0" prefWidth="20.0" text="1">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="lvl2Button" mnemonicParsing="false" onAction="#handleLvl2Button" prefHeight="20.0" prefWidth="20.0" text="2">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="lvl3Button" mnemonicParsing="false" onAction="#handleLvl3Button" prefHeight="20.0" prefWidth="20.0" text="3">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label text="Normal levels">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.8269230769230769">
+                     <stops>
+                        <Stop color="#ff8603" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="lvl4Button" mnemonicParsing="false" onAction="#handleLvl4Button" prefHeight="20.0" prefWidth="20.0" text="4">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="lvl5Button" mnemonicParsing="false" onAction="#handleLvl5Button" prefHeight="20.0" prefWidth="20.0" text="5">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="lvl6Button" mnemonicParsing="false" onAction="#handleLvl6Button" prefHeight="20.0" prefWidth="20.0" text="6">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label text="Hard levels">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.8269230769230769">
+                     <stops>
+                        <Stop color="#cd0000" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="lvl7Button" mnemonicParsing="false" onAction="#handleLvl7Button" prefHeight="20.0" prefWidth="20.0" text="7">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="lvl8Button" mnemonicParsing="false" onAction="#handleLvl8Button" prefHeight="20.0" prefWidth="20.0" text="8">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="lvl9Button" mnemonicParsing="false" onAction="#handleLvl9Button" prefHeight="20.0" prefWidth="20.0" text="9">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="resetDataButton" mnemonicParsing="false" onAction="#resetDataButton" text="Reset data">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
